@@ -1,0 +1,7 @@
+export {default as Header} from './header/Header'
+export {default as Admission} from './admission/Admission'
+export {default as About} from './about/About'
+export {default as Gallery} from './gallery/Gallery'
+export {default as Footer} from './footer/Footer'
+export {default as Notice} from './notice/Notice'
+export {default as WhyUs} from './whyUs/WhyUs'

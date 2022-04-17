@@ -1,0 +1,134 @@
+footer{
+    width: 100vw;
+    min-height: 25rem;
+    max-height: max-content;
+    padding: 2rem;
+    background-color: crimson;
+    color: white;
+
+}
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 75%;
+    margin: 0 auto;
+}
+.quick-links > p{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+footer .quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px; 
+    height: 150px;
+    background-color: rgb(17, 17, 54);
+    border-radius: 0 0 85px 85px;
+    margin-bottom: 2rem;
+}
+.footer_logo >h1{
+    color: #dc143c;
+    font-size: 25px;
+}
+
+.footer_motto{
+    padding: 1rem 0 2rem;
+    width: max-content;
+    font-size: 10px;
+}
+
+.social_media-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.contact_details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+.contact_detail-icon{
+    margin-right: 10px;
+    color: aqua;
+}
+.contact_details > p{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+@media screen and (max-width:700px) {
+    .footer_container{
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+        width: 100%;
+    }
+    .footer_logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px; 
+        height: 150px;
+        background-color: rgb(17, 17, 54);
+        border-radius: 0 0 85px 85px;
+        margin-bottom: 2rem;
+    }
+   .footer_logo >h1{
+        color: #dc143c;
+        font-size: 25px;
+    }
+    
+    .footer_motto{
+        padding: 1rem 0 2rem;
+        width: max-content;
+        font-size: 10px;
+    }
+    
+    .quick-links , .social-media{
+        height: max-content;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .footer_container{
+        padding-left: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+    }
+}

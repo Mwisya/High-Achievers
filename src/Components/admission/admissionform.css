@@ -1,0 +1,121 @@
+.form_section{
+    min-height: max-content;
+    width: 100vw;
+}
+.form_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+article{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    line-height: 25px;
+    margin-top: 5rem;
+
+}
+article > h3{
+    margin: 1rem;
+    color: crimson;
+    font-weight: 900;
+}
+
+form{
+    width: 100%; 
+
+    height: max-content;
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    transition: all 400ms ease-in-out;
+    animation: scale-up 400ms;
+}
+form h3{
+    color: brown;
+
+}
+
+form > input{
+    color: brown;
+    background-color: #ffffff10;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0 0 13px rgb(73, 31, 3);
+    border-radius: 5px;
+}
+form input::placeholder{
+    color: brown;
+    font-weight: 500;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: black;
+}
+.checkbox_input{
+    margin-right: 1rem;
+}
+form > button{
+    width: 10rem;
+    font-weight: 900;
+    
+    padding: 1rem;
+    color: white;
+    background-color: brown;
+    
+}
+
+@keyframes scale-up {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes scale-up{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .form_container{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .form_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+    article{
+        text-align: center;
+        padding: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    form{
+        padding: 1rem;
+    }
+}

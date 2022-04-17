@@ -1,0 +1,50 @@
+
+.menu{
+    padding: 1rem 2rem;
+    cursor: pointer;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 400ms ease-in-out;
+}
+.menu > ul{
+    width: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+.menu__links{
+    color: white; 
+    -webkit-transition:all 0.1s ease-out;
+    transform: scale(0.9);
+
+    background-color: var(--primary-color);
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    width: 100%;
+}
+.menu__links:hover{
+    color: whitesmoke;
+    transform: scale(1);
+}
+
+.menu > ul > li{
+    margin-bottom: 10px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:700px) {
+    .menu > ul{
+        display: flex;
+        flex-direction: column;
+    }
+}

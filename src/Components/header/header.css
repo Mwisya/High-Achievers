@@ -1,0 +1,162 @@
+header{
+    width: 100vw;
+    padding: 1rem;
+    min-height: 35rem;
+    background-color: #dc143c; 
+    color: var(--text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+a{
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_icon{
+    visibility: hidden;
+    background: unset;
+}
+.menu_open{
+  
+
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    animation: scale-up 0.3s ease-in;
+    overflow: hidden;
+}
+.icon{
+    margin-right: 10px;
+    color: wheat;
+
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px; 
+    height: 250px;
+    background-color: rgb(17, 17, 54);
+    border-radius: 0 0 85px 85px;
+    margin: 2rem;
+}
+.logo h1{
+    color: #dc143c;
+}
+
+.motto{
+    padding: 1rem 0 2rem;
+    width: max-content;
+}
+
+.contacts{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    transition: 400ms all ease-in-out;
+
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 50%;
+    height: max-content;
+}
+address{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 50%;
+    height: max-content;
+    text-align: center;
+}
+
+/* ..................KEYFRAMES................ */
+
+
+@keyframes scale-up {
+    0%{
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+
+    }
+}
+@-webkit-keyframes scale-up{
+    0%{
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+
+    }
+}
+
+/* ..................MEDIA QUERIES................. */
+
+@media  screen and (max-width:800px) {
+    .header{
+        padding: 0;
+    }
+    .menu_icon{
+        visibility: visible;
+        font-weight: 800;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    nav{
+        display: none;
+    }
+    .menu_open{
+        visibility: visible;
+        position: fixed;
+        top: 2.2rem;
+        left: 0;
+        z-index: 399;
+        width: 220px;
+        height: 70%;
+        background-color: rgb(17, 17, 54);
+    }
+    .logo{   
+        width: 130px; 
+        height: 200px;
+        margin: 1rem;
+    }
+    .contacts{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .phone > a{
+        font-size: 12px;
+    }
+    .address > p > a{
+        font-size: 12px;
+    }
+    address{
+        width: max-content;
+    }
+
+}
