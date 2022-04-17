@@ -8,9 +8,9 @@ import Noticepage from './pages/Noticepage';
 function App() {
   return (
       <div className="App">
-        <BrowserRouter basename='/'>
+        <BrowserRouter basename='/High-Achievers'>
         <Routes>
-          <Route path="/"  element={<Homepage/>}/>
+          <Route path="/" exact  element={<Homepage/>}/>
           <Route path="/admission" element={<AdmissionPage/>}/>
           <Route path="/notice" element={<Noticepage/>}/>
         </Routes>
