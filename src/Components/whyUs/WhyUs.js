@@ -3,7 +3,7 @@ import './whyus.css'
 
 const WhyUs = () => {
   return (
-    <div className='whyus_container' >
+    <div className='container' >
         <h2>Why Choose Us</h2>
       
       <div className="cards">
@@ -11,7 +11,7 @@ const WhyUs = () => {
         <div className="card">
             <Apartment className='card_icon'/>
             <h4>School Vision</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui magni reprehenderit corrupti natus maxime ratione tempore facilis sequi iure velit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui magni reprehenderit corrupti natus maxime ratione tempore facilis sequi iure velit! Lorem, ipsum dolor.</p>
         </div>
         <div className="card">
             <Hotel className='card_icon'/>
@@ -26,7 +26,7 @@ const WhyUs = () => {
         <div className="card">
             <People className='card_icon'/>
             <h4>Experienced Stuff</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui magni reprehenderit corrupti natus maxime ratione tempore facilis sequi iure velit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui magni reprehenderit corrupti natus maxime ratione tempore facilis sequi iure velit! Lorem ipsum dolor sit.</p>
         </div>
         <div className="card">
             <Train className='card_icon'/>

@@ -160,3 +160,12 @@ address{
     }
 
 }
+
+@media  screen and (max-width:1024px) {
+    .phone > a{
+        font-size: 12px;
+    }
+    .address > p > a{
+        font-size: 12px;
+    }
+}

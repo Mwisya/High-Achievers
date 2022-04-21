@@ -6,18 +6,22 @@
     background-color: rgb(9, 9, 114);
     position: relative;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .navigation-btn{
     position: absolute;
-    bottom: 1rem;
-    right: 50rem;
+    top: 4rem;
+    left: 5rem;
     z-index: 400;
 
     width: 7rem;
     height: max-content;
     padding: 1rem;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     color: aqua;
     background-color: rgba(0, 0, 0, 0.3);
     
@@ -28,7 +32,7 @@
 
 }
 .notice_container > h2{
-    margin: 1rem;
+    margin: 2rem;
     text-decoration: underline;
 }
 .logo_container{
@@ -83,7 +87,7 @@
 
 .notice_article{
    color: white;
-   font-size: 17px;
+   font-size: 16px;
     width: 75%;
     height: 70%;
     margin: 0 auto;
@@ -105,37 +109,38 @@
     margin: 1rem 0;
 }
 
-@media screen and (max-width:900px) {
+
+@media screen and (max-width:700px) {
     .notice_container{
-        width: 100%;
-        padding: 2rem 0;
+        width: 90%;
     }
     .navigation-btn{
         position: fixed;
         top: 3rem;
         left: 0;
-        
-        font-size: 16px;
-        width: 6rem;
+        font-weight: normal;
+        font-size: 8px;
     }
     .notice_contacts{
         width: 100%;
-        padding: 0 2rem;
 
         display: flex;
-        justify-content: center;
-        gap: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
         
     }
     .notice_article{
-         width: 100%;
-         padding:1rem;
+        font-size: 12px;
+         padding:2rem;
+         height: 100%;
+         line-height: 1.5;
      }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1050px) {
     .notice_contacts{
-        width: 100%;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -147,6 +152,8 @@
         width: 6rem;
     }
     .notice_article{
+        line-height: 1.5;
+        font-size: 14px;
         width: 100%;
         padding-bottom: 2rem;
     }

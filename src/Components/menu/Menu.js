@@ -2,14 +2,14 @@ import React from 'react'
 import './menu.css'
 import {Link} from 'react-router-dom'
 
-const Menu = () => {
+const Menu = ({closemenu}) => {
 
   
 
     
     return (
         <div className="menu">
-            <ul>
+            <ul onClick={closemenu}>
                 <li>
                     <Link to="/" className='menu__links' >Home</Link>
                 </li>

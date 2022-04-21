@@ -5,13 +5,19 @@ const AdmissionForm = () => {
   const[parent ,setParent]= useState("")
   const[child ,setChild]= useState("")
   const[school ,setSchool]= useState("")
+  const[date ,setDate]= useState("")
+  const[male ,setMale]= useState("")
+  const[female ,setFemale]= useState("")
 
   function submit(e) {
      e.preventDefault();
      
      setParent("")
      setChild("")
-    setSchool("")
+     setSchool("")
+     setDate("")
+     setMale("")
+     setFemale("")
    }
   return (
     <section className='form_section'>
@@ -25,14 +31,14 @@ const AdmissionForm = () => {
           <h3>Fill in Details</h3>
             <input type="text" value={parent} onChange={(e)=> setParent(e.target.value) } placeholder='Parent name' />
             <input type="text" value={child} onChange={(e)=> setChild(e.target.value)} placeholder='Childs name' />
-            <input type="date" name="" id="" placeholder='D.O.B'  />
+            <input type="date" value={date}  placeholder='D.O.B' onChange={(e)=> setDate(e.target.value)}  />
             <input type="text" value={school} onChange={(e)=> setSchool(e.target.value)} placeholder='Previous school' />
             <div className='checkbox'>
               <label htmlFor="male">
-                <input type="checkbox"  className='checkbox_input' name="male" id="male" value='male'/>Male
+                <input type="checkbox"  className='checkbox_input' name="male" id="male" value={male} onChange={(e)=> setMale(e.target.value)} />Male
               </label>
               <label htmlFor="female">
-                <input type="checkbox" className='checkbox_input' name="female" id="female" value='female'/>Female
+                <input type="checkbox" className='checkbox_input' name="female" id="female" value={female} onChange={(e)=> setFemale(e.target.value)}/>Female
               </label>
             </div>
             <button type="submit">Submit</button>

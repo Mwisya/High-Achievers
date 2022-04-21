@@ -19,7 +19,7 @@
 }
 .menu__links{
     color: white; 
-    -webkit-transition:all 0.1s ease-out;
+    transition:all 400ms ease-out;
     transform: scale(0.9);
 
     background-color: var(--primary-color);

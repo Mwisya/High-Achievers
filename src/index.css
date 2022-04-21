@@ -18,9 +18,9 @@
   --text-color:white;
   --primary-color: rgb(17, 17, 54);
 
-  --container-sm: 100%;
-  --container-md: 84%;
-  --container-lg: 75%;
+  --container-sm: 96%;
+  --container-md: 94%;
+  --container-lg: 82%;
 
 }
 
@@ -39,12 +39,28 @@ html{
 
 } */
 
-.container{
-  width: var(--container-lg);
-  margin: 0 auto;
-  background-color: gray;
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
+.container{
+  text-align: center;
+  width: var(--container-lg);
+  margin: 0 auto;
+}
 
+@media screen and (max-width:800px) {
+  .container{
+    width: var(--container-sm);
+    margin: 0 auto;
+  }
+}
 
-
+@media screen and (max-width:10240px) {
+  .container{
+    width: var(--container-md);
+    margin: 0 auto;
+  }
+}

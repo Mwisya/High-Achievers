@@ -1,35 +1,26 @@
-.whyus_container{
-    text-align: center;
-    margin-top: 2rem;
-}
 
-.whyus_container > h2{
-    margin: 1rem;
-}
 .cards{
-    height: max-content;
+    width: 90%;
+    margin: 0 auto;
     padding: 2rem;
-
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
     justify-content: center;
 
-    width: 75%;
-    margin: 0 auto 2rem;
+    transition: all 400ms ease-out;
 }
 .card{
-    width: 25rem;
-    height: max-content;
-    line-height: 20px;
-    text-align: center;
-    color: whitesmoke;
-    background-color: rgb(9, 9, 114);
-
-
+    line-height: 1.5;
+    padding: 2rem;
+    width: 35%;
+    height: 14rem;
+    color: white;
+    background-color: var(--primary-color);
     border-radius: 10px;
-    padding:2rem;
+
 }
 .card_icon{
     color: crimson;
@@ -38,38 +29,69 @@
 .card >h4{
     color: rgb(241, 143, 14);
     margin: 0.5rem;
+    font-weight: 700;
 }
 
 
-@media screen and (max-width:1024px) {
-    .card > p{
-        font-size: 14px;
+@media screen and (max-width:1200px) {
+    .cards{
+        
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
+   .card{
+       padding: 1rem;
+       width: 65%;
+       height: 11rem;
+   }
+   .card >p{
+       font-size: 14px;
+   }
+
 }    
 
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
     .cards{
-        padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        width: 90%;
-        margin: 0 auto 2rem;
-
+        align-items: center;
+        justify-content: center;
     }
-    .card{
-        width: 90%;
-    }
-    .card > p{
-        font-size: 14px;
-    }
-    .card_icon{
-        font-size: 2.4rem;
-    }
+   .card{
+       padding: 1rem;
+       width: 96%;
+       height: 11rem;
+   }
+    
+   .card >p{
+       font-size: 14px;
+   }
+   .card >h4{
+    font-weight: 400;
 }
+}
+
 @media screen and (max-width:400px) {
-    .card > p{
-        font-size: 13px;
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+   .card{
+       padding: 1rem;
+       width: 100%;
+       height: 12rem;
+   }
+    
+   .card >p{
+       font-size: 14px;
+   }
+   .card >h4{
+    font-weight: 400;
+}
 }
