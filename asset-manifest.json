@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/High-Achievers/static/css/main.6fbde3d3.chunk.css",
-    "main.js": "/High-Achievers/static/js/main.84b582d8.chunk.js",
-    "main.js.map": "/High-Achievers/static/js/main.84b582d8.chunk.js.map",
+    "main.css": "/High-Achievers/static/css/main.2f4be964.chunk.css",
+    "main.js": "/High-Achievers/static/js/main.6afa5314.chunk.js",
+    "main.js.map": "/High-Achievers/static/js/main.6afa5314.chunk.js.map",
     "runtime-main.js": "/High-Achievers/static/js/runtime-main.54d57826.js",
     "runtime-main.js.map": "/High-Achievers/static/js/runtime-main.54d57826.js.map",
     "static/js/2.48b575c9.chunk.js": "/High-Achievers/static/js/2.48b575c9.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1dec1701.chunk.js": "/High-Achievers/static/js/3.1dec1701.chunk.js",
     "static/js/3.1dec1701.chunk.js.map": "/High-Achievers/static/js/3.1dec1701.chunk.js.map",
     "index.html": "/High-Achievers/index.html",
-    "static/css/main.6fbde3d3.chunk.css.map": "/High-Achievers/static/css/main.6fbde3d3.chunk.css.map",
+    "static/css/main.2f4be964.chunk.css.map": "/High-Achievers/static/css/main.2f4be964.chunk.css.map",
     "static/js/2.48b575c9.chunk.js.LICENSE.txt": "/High-Achievers/static/js/2.48b575c9.chunk.js.LICENSE.txt",
     "static/media/basketball.b55b98bb.jpg": "/High-Achievers/static/media/basketball.b55b98bb.jpg",
     "static/media/classroom.f889f0a4.jpg": "/High-Achievers/static/media/classroom.f889f0a4.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.54d57826.js",
     "static/js/2.48b575c9.chunk.js",
-    "static/css/main.6fbde3d3.chunk.css",
-    "static/js/main.84b582d8.chunk.js"
+    "static/css/main.2f4be964.chunk.css",
+    "static/js/main.6afa5314.chunk.js"
   ]
 }
