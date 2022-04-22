@@ -26,15 +26,13 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-
   user-select: none;
-
-  
 }
 
 html{
   scroll-behavior: smooth;
 }
+
 /* ::-webkit-scrollbar{
 
 } */

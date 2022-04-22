@@ -110,9 +110,9 @@
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .notice_container{
-        width: 90%;
+        width: 100%;
     }
     .navigation-btn{
         position: fixed;
@@ -132,7 +132,7 @@
     }
     .notice_article{
         font-size: 12px;
-         padding:2rem;
+         padding:1rem;
          height: 100%;
          line-height: 1.5;
      }
